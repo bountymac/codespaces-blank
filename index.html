@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Counter Demo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #root {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    <!-- React CDN Links -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!-- Babel CDN Link (for JSX) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- Container for React app -->
+    <div id="root"></div>
+
+    <!-- React Component Script -->
+    <script type="text/babel">
+      const { useState } = React;
+
+      function Counter() {
+        const [count, setCount] = useState(0);
+
+        return (
+          <div>
+            <h2>Simple React Counter</h2>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>
+              Click me
+            </button>
+          </div>
+        );
+      }
+
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Counter />);
+    </script>
+</body>
+</html>
