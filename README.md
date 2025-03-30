@@ -28,6 +28,17 @@ The project uses the following CDNs:
 
 You can modify the `Counter` component inside the `<script type="text/babel">` tag in `index.html` to add more functionality or style.
 
+## Deploying to GitHub Pages
+
+To deploy the project to GitHub Pages, follow these steps:
+
+1. Ensure you have a `gh-pages` branch in your repository.
+2. Add a GitHub Actions workflow file named `deploy.yml` in the `.github/workflows` directory.
+3. The `deploy.yml` file should contain the necessary configuration to automate the deployment process to GitHub Pages.
+4. Push your changes to the `main` branch to trigger the deployment workflow.
+
+Once deployed, you can access your GitHub Pages site at `https://<your-username>.github.io/<your-repository-name>/`.
+
 ## License
 
 This project is open-source and free to use.
