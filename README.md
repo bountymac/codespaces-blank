@@ -31,3 +31,24 @@ You can modify the `Counter` component inside the `<script type="text/babel">` t
 ## License
 
 This project is open-source and free to use.
+
+## Deployment Purging
+
+### Purpose
+
+The `purge-deployments.sh` script is designed to help you clean up and remove deployment-related files, directories, and configurations from your system.
+
+### How to Use
+
+1. Open a terminal.
+2. Navigate to the directory where the `purge-deployments.sh` script is located.
+3. Run the script using the following command:
+   ```bash
+   ./purge-deployments.sh
+   ```
+4. The script will delete deployment-related files, remove deployment-related directories, and clean up deployment-related configurations.
+
+### Important Notes
+
+- Ensure you have the necessary permissions to delete files and directories.
+- Double-check the paths and configurations in the script before running it to avoid accidental data loss.
